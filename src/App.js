@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
-import Radium from 'radium';
 
 //one single root element is returned in react components
 class App extends Component {
@@ -61,11 +60,6 @@ class App extends Component {
           border: '1x solid blue',
           padding: '8px',
           cursor: 'pointer',
-          ':hover': {
-              backgroundColor: 'lightgreen',
-              color: 'black'
-          }
-
       }
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null,  "Hi, I'm a React App!!!") );
 
@@ -87,10 +81,6 @@ class App extends Component {
         );
 
         style.backgroundColor = 'red';
-        style[':hover'] = {
-            backgroundColor: 'salmon',
-            color: 'black'
-        }
     }
 
     const classes = [];
@@ -117,4 +107,4 @@ class App extends Component {
   }
 }
 
-export default Radium(App);
+export default App;
